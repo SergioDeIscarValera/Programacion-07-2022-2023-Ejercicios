@@ -1,10 +1,7 @@
-import config.AppConfig
 import controller.producto.ProductoController
 import factories.ProductoFactory
 import models.Producto
-import repository.producto.ProductoRepositoryDataBase
 import repository.producto.ProductoRepositoryMap
-import services.database.DataBaseManager
 import services.storage.productos.ProductoFileCsv
 import services.storage.productos.ProductoFileJson
 import services.storage.productos.ProductoFileXml
@@ -14,10 +11,6 @@ fun main(){
     val productos = ProductoFactory.getRdnProductos()
 
     val controllers = listOf(
-        ProductoController(
-            ProductoRepositoryDataBase,
-            ProductoFileCsv
-        ),
         ProductoController(
             ProductoRepositoryMap,
             ProductoFileJson

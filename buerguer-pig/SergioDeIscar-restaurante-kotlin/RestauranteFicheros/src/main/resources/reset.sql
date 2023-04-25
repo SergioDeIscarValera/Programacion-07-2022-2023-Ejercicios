@@ -1,5 +1,0 @@
-DROP TABLE IF EXISTS tProducto;
-DROP TABLE IF EXISTS tBebida;
-DROP TABLE IF EXISTS tIngrediente;
-DROP TABLE IF EXISTS tHamburguesa;
-DROP TABLE IF EXISTS tHamburguesa_Ingrediente;
